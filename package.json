@@ -1,0 +1,22 @@
+{
+  "name": "coingecko-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "lint-staged": {
+    "**/*.{ts,js,json,md}": "prettier --write"
+  }
+}
